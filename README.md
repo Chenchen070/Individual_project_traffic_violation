@@ -251,3 +251,6 @@ By analyzing the attributes of personal injury in Montgomery county (MD) traffic
 2. Personal injury in the accident is not the only outcome of traffic violations. I would like to analyze more outcomes. Explore more different target variables from this data.
 
 ## no errors (Report.ipynb)
+
+## trello board used for planning
+https://trello.com/invite/b/zhiXrZTE/6c5d43a2b63210b0e596db80887ded7f/individual-project-traffic-voilation
