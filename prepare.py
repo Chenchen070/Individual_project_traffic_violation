@@ -54,3 +54,13 @@ def prep_data(df):
     df = clean_data(df)
     train, validate, test = split_data(df)
     return train, validate, test
+
+from sklearn.metrics import confusion_matrix
+def f1_score(y, prediction):
+    TN, FP, FN, TP = confusion_matrix(y, prediction).ravel()
+    ALL = TP + FP + FN + TN
+
+    true_positive_rate = sensitivity = recal = power = TP/(TP+FN)
+    precision = PPV = TP/(TP+FP)
+    f1 = 2*(precision*recal)/(precision+recal)
+    return f1
